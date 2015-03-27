@@ -1,0 +1,108 @@
+/* #################################################### */
+/* ###################### Global ###################### */
+/* #################################################### */
+body{height:100%;margin:0;font-family:sans-serif;color:#555;background:#fff url(bg_striped.png);}
+a{text-decoration:none;outline:none;color:#555;}
+a:hover, a:active{color:orange;}
+a.external{display:block;width:10px;height:10px;background:url(external.png);}
+#bgDark{position:fixed;z-index:1;display:none;opacity:0;background:black;width:100%;height:100%;}
+#global{position:absolute;margin:auto;left:50%;width:950px;height:950px;margin-left:-475px;border-width:0 1px;border-style:solid;border-color:#ccc;background:white;}
+#footer{position:absolute;z-index:2;bottom:0;width:100%;height:42px;padding-top:7px;outline:1px solid #ccc;border-top:1px solid #fff;background:#eee;opacity:0.8;line-height:15px;text-align:center;font-size:11px;color:#555;text-shadow:1px 1px 1px #fff;}
+.wind{z-index:1000;position:absolute;height:150px;width:400px;border:2px dashed #bbb;border-radius:5px;background:#fff;}
+.wind .menu{padding:6px 10px;border-bottom:1px solid #ccc;background:#eee url(menu_bg.png);text-align:left;font-weight:bold;font-size:16px;text-shadow:1px 1px 0 #fff;}
+.wind .menu a{float:right;width:16px;height:16px;border:1px dashed #eee;background:url(close.png);opacity:0.7;}
+.wind .menu a:hover{border-color:#bbb;opacity:1;}
+.wind .content{position:absolute;width:100%;top:32px;bottom:0;overflow:hidden;}
+
+/* #################################################### */
+/* ###################### Cursus ###################### */
+/* #################################################### */
+#cursus{top:224px;left:-25px;width:400px;height:200px;}
+#cursus .content{overflow:auto;}
+#cursus img{position:absolute;}
+#cursus #cursus_ico0{left: -2px; top:30px;} /* Paul Cornu       */
+#cursus #cursus_ico1{left:125px; top:37px;} /* Epitech          */
+#cursus #cursus_ico2{left:262px; top:32px;} /* Universite Laval */
+#cursus #cursus_menu{margin-left:500px;opacity:0;}
+#cursus #cursus_a_open{position:absolute;z-index:1;top:32px;display:block;width:100%;text-align:center;font-size:36px;text-shadow:1px 1px 1px #fff;}
+#cursus #cursus_time{display:none;margin-top:0;margin-left:5px;padding-right:5px;width:110px;opacity:0;border-right:1px dashed #ccc;text-align:center;}
+#cursus #cursus_time img{right:0;top:0;width:56px;margin-top:-5px;}
+#cursus #cursus_time .para,
+#cursus #cursus_time .date{border-top:1px solid #eee;padding:15px 0;font-size:12px;}
+#cursus #cursus_time .para{position:absolute;left:125px;right:5px;text-align:left;}
+#cursus #cursus_time .line{margin-left:49%;margin-bottom:3px;width:2%;background:#f77;}
+#cursus #cursus_time .small{opacity:0.6;color:#666;}
+#cursus #cursus_time .great{font-weight:bold;}
+
+/* #################################################### */
+/* ##################### FollowMe ##################### */
+/* #################################################### */
+#followme{top:576px;left:77px;height:80px;width:400px;}
+#followme #followme_a_open{position:absolute;z-index:1;bottom:3px;width:100%;text-align:center;font-size:28px;font-family:courier;}
+#followme img{position:absolute;}
+#followme img:hover{margin-top:-2px;}
+#followme #followme_ico0{left:163px; top:-69px;} /* Gmail       */
+#followme #followme_ico1{left:-57px; top:-64px;} /* Facebook    */
+#followme #followme_ico2{left: 79px; top:-78px;} /* SiteDuZero  */
+#followme #followme_ico3{left: 15px; top:-85px;} /* GitHub      */
+#followme #followme_ico4{left:220px; top:-42px;} /* YouTube     */
+#followme #followme_ico5{left:310px; top:-67px;} /* GrooveShark */
+#followme ul{position:absolute;width:100%;margin:0;padding:0;opacity:0;display:none;}
+#followme ul li{width:96%;margin-left:2%;padding-top:17px;padding-bottom:18px;border-top:1px solid #eaeaea;list-style:none;font-size:12px;}
+#followme ul :first-child{border:none;}
+#followme ul li a{position:absolute;margin-top:-6px;left:47px;right:5px;height:15px;overflow:hidden;padding-left:400px;}
+
+/* #################################################### */
+/* ###################### Skills ###################### */
+/* #################################################### */
+#skills{top:395px;right:-40px;height:200px;width:400px;}
+#skills #skills_menu{display:none;}
+#skills .content{top:0;}
+#skills .content #skills_list{display:none;opacity:0;}
+#skills .content .skills_title{position:relative;margin-top:15px;}
+#skills .content .skills_title hr{height:2px;border:0;background:#ccc;}
+#skills .content .skills_title span{position:absolute;padding:0 5px;margin-left:15px;margin-top:-18px;background:white;font-size:14px;}
+#skills .content .skills_line:first-child{border-top:none;}
+#skills .content .skills_line{padding:1px 0;border-top:1px solid #ddd;line-height:32px;font-size:12px;font-family:monospace;letter-spacing:-1px;}
+#skills .content .skills_line div,
+#skills .content .skills_line img{float:left;}
+#skills .content .skills_line img{margin-left:5px;margin-top:2px;width:28px;}
+#skills .content .skills_line .sep{margin:4px 5px;width:1px;height:24px;background:#ccc;float:left;}
+#skills .content .skills_line .com{margin-top:6px;}
+#skills .content .skills_line .com span{font-size:13px;}
+#skills .content .skills_line .skills_meter{margin-top:11px;width:90px;height:10px;border:0 solid #aaf;background:#ccf;}
+#skills .content .skills_line .skills_meter div{height:100%;background:#005;}
+#skills #skills_open{position:relative;width:100%;height:40px;margin-top:80px;text-align:center;}
+#skills #skills_open #skills_open_bg{width:100%;height:100%;background:white;opacity:0.9;}
+#skills #skills_open #skills_a_open{position:absolute;top:6px;left:50%;margin-left:-82px;font-size:28px;font-family:courier;}
+#skills #skills_icons img{position:absolute;}
+#skills #skills_ico0 {left: 88px; top:-32px;} /* C      */
+#skills #skills_ico1 {left:147px; top: 71px;} /* C++    */
+#skills #skills_ico2 {left: 36px; top: 17px;} /* Linux  */
+#skills #skills_ico3 {left:210px; top:-25px;} /* Git    */
+#skills #skills_ico4 {left:298px; top: 26px;} /* HTML5  */
+#skills #skills_ico5 {left: 80px; top:101px;} /* CSS3   */
+#skills #skills_ico6 {left:167px; top:-20px;} /* PHP    */
+#skills #skills_ico7 {left:-30px; top: 75px;} /* JS     */
+#skills #skills_ico15{left:-34px; top:-32px;} /* DOM    */
+#skills #skills_ico8 {left:  8px; top:-35px;} /* jQuery */
+#skills #skills_ico12{left: 70px; top:111px;} /* MySQL  */
+#skills #skills_ico9 {left:278px; top:108px;} /* Id     */
+#skills #skills_ico10{left:186px; top:128px;} /* Flash  */
+#skills #skills_ico11{left:192px; top: 29px;} /* Maya   */
+#skills #skills_ico13{left:-21px; top: 31px;} /* Ps     */
+#skills #skills_ico14{left:300px; top:-50px;} /* Ai     */
+
+/* #################################################### */
+/* ###################### WhoAmI ###################### */
+/* #################################################### */
+#whoami{top:50px;right:80px;width:420px;height:267px;overflow:hidden;}
+#whoami #whoami_menu{margin-top:-32px;}
+#whoami #whoami_p{opacity:0;}
+#whoami .content{overflow:visible;}
+#whoami .content p{display:none;margin:0;padding:8px;font-family:monospace;font-size:11px;line-height:19px;text-align:justify;}
+#whoami .content p a{border-bottom:1px dotted #ccc;}
+#whoami .content img{float:left;width:100%;margin-top:-32px;margin-right:6px;opacity:0.3;}
+#whoami .content a.external{display:none;position:absolute;left:11px;top:85px;}
+#whoami #whoami_open_bg{z-index:1;position:absolute;opacity:0.8;left:160px;right:0;top:160px;padding:5px 0 5px 10px;background:white;}
+#whoami #whoami_a_open{font-family:sans-serif;font-size:28px;font-weight:bold;}

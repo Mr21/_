@@ -1,0 +1,78 @@
+/* ............................ <reset> ............................ */
+html, body { height:100%; min-height:500px; }
+body { font:12px sans-serif; color:#ddd; background:url(global_bodyBg.png) center 50px; }
+body, p, h1, h2 { margin:0; padding:0; }
+a { text-decoration:none; color:#ddf; outline:0; }
+a:hover { color:#88f; }
+.clearBoth { clear:both; }
+a img { border:0; }
+/* Welcome to the non-standard world ! */
+::-webkit-scrollbar { width:8px; }
+::-webkit-scrollbar-thumb { border-radius:8px; background:#222; }
+
+/* .......................... <transition> ......................... */
+#nav a,
+#nav a span,
+#curriculum .timeline .event,
+#projects .project,
+#keepInTouch h2,
+#keepInTouch li {
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+	}
+#skills .nothing .circle {
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+	}
+#skills .nothing > div,
+#skills .nothing .line {
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+	}
+
+/* ............................ <global> ........................... */
+#global          { position:relative; margin:auto; width:900px; height:100%; opacity:0; }
+#windowContainer { position:absolute; width:100%; top:35px; bottom:110px; overflow:hidden; background:rgba(0,0,0,0.1); border-top:2px solid #333; }
+
+/* ........................... <languages> ......................... */
+body[lang="fr"] [lang="en"],
+body[lang="en"] [lang="fr"] { display:none; }
+#languages { padding-top:12px; text-align:right; }
+#languages > * { display:inline-block; vertical-align:top; }
+#languages div { position:relative; overflow:hidden; height:1.4em; margin-top:-2px; background:; }
+#languages span { position:absolute; right:0; background:; }
+#languages a          { opacity:0.40; margin-left:8px; width:16px; height:11px; background:url(sprites.png); }
+#languages a:hover    { opacity:0.75; }
+#languages a.selected { opacity:1.00; }
+#languages [lang=fr] { background-position:-80px -313px; }
+#languages [lang=en] { background-position:-96px -313px; }
+
+/* ........................... <startPage> ......................... */
+#startPage { height:100%; text-align:center; }
+#startPage .title { position:absolute; width:100%; top:50%; margin-top:-85px; }
+#startPage h1 { font:bold 5em sans-serif; }
+#startPage h1 span { color:#111; background:#ddd; padding:0 10px 0 15px; }
+#startPage hr { margin:auto; width:80%; height:75px; border:0; opacity:0.66; }
+#startPage hr:after { font-size:2em; line-height:75px; content:"•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•\A0\A0•"; }
+#startPage h2 > span + span:before     { content:"+"; margin:0 10px; opacity:0.25; font-weight:normal; }
+#startPage h2 > span:last-child:before { content:"➞"; }
+
+/* ............................. <window> .......................... */
+#window       { position:absolute; top:100%; bottom:0; background:url(global_windowBg.png) center 46px; opacity:0; }
+#window > div { position:absolute; top:0%; width:100%; height:100%; overflow:auto; display:none; }
+#window > div > .padding { padding:15px 15px 35px; zoom:1; }
+#window > div > .padding:after { content:""; display:table; clear:both; }
+
+#welcomeMessage { position:absolute; top:-16px; right:100%; width:118px; height:65px; }
+#welcomeMessage div { width:100%; height:100%; background:url(sprites.png); }
+#welcomeMessage div[lang=fr] { width:100%; height:100%; background-position: -80px -248px; }
+#welcomeMessage div[lang=en] { width:100%; height:100%; background-position:-198px -248px; }

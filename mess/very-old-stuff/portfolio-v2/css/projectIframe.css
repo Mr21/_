@@ -1,0 +1,206 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	}
+
+#menu {
+	font-size: 12px;
+	color: #ddd;
+	border-bottom: 2px solid rgb(34,34,34);
+	background: rgb(50,50,50);
+	}
+	#menu.light {
+		color: #222;
+		border-bottom: 2px solid rgba(0,0,0,.1);
+		background: #f1f1f1;
+		}
+	#menu .content {
+		display: table;
+		width: 100%;
+		height: 30px;
+		vertical-align: middle;
+		-webkit-transition: all .2s ease;
+		}
+		#menu .content > span {
+			display: table-cell;
+			padding: 0 10px;
+			vertical-align: middle;
+			}
+			#menu .content > span > * {
+				vertical-align: middle;
+				}
+				#menu .content > span > span:after {
+					content: "/";
+					margin: 0 .7em;
+					opacity: .5;
+					}
+				#menu span.right > span:after {
+					content: "|";
+					}
+			#menu span.right {
+				text-align: right;
+				}
+			#menu a {
+				color: inherit;
+				text-decoration: none;
+				}
+				#menu a:hover {
+					color: #aaf;
+					text-decoration: underline;
+					}
+				#menu a.github {
+					font-weight: bold;
+					font-size: 11px;
+					}
+
+iframe {
+	display: block;
+	width: 100%;
+	border: 0;
+	}
+
+.project #content {
+	position: absolute;
+	width: 100%;
+	top: 32px;
+	bottom: 0;
+	}
+	.project #content iframe {
+		height: 100%;
+		}
+
+.plugin,
+.plugin #demo iframe {
+	background: #f1f1f1;
+	}
+	.plugin #content,
+	.plugin #demo iframe {
+		border: 5px solid rgba(0,0,0,.1);
+		}
+	.plugin #content {
+		width: 700px;
+		margin: auto;
+		padding: 50px 25px 100px;
+		border-top-width: 0;
+		border-bottom-width: 0;
+		font: 14px sans-serif;
+		line-height: 1.5em;
+		background: #fff;
+		}
+		.plugin #content a {
+			text-decoration: none;
+			font-weight: bold;
+			outline: 0;
+			}
+			.plugin #content a:hover {
+				border-bottom: 1px dashed;
+				}
+		.plugin #content ul {
+			margin: 0;
+			padding-left: 2em;
+			}
+		.plugin #content p {
+			margin: 0;
+			text-indent: 1em;
+			}
+		.plugin #content .gist {
+			font-size: 12px;
+			line-height: normal;
+			}
+		.plugin #content .code {
+			font-family: monospace,courier;
+			border-radius: 2px;
+			padding: 0 .3em;
+			background: rgba(0,0,0,.1);
+			}
+		.plugin #header {
+			margin-bottom: 75px;
+			text-align: center;
+			}
+			.plugin #header h1 {
+				margin: 0;
+				font-size: 32px;
+				}
+				.plugin #header h1 > span b {
+					opacity: .5;
+					font-size: .75em;
+					margin-left: .5em;
+					}
+					.plugin #header h1 > span b:before {
+						content: "v";
+						}
+				.plugin #header h1 > * {
+					vertical-align: middle;
+					}
+				.plugin #header h1 > * + * {
+					margin-left: .5em;
+					}
+			.plugin #header .menu {
+				margin-top: 12px;
+				}
+				.plugin #header .menu > * {
+					vertical-align: middle;
+					}
+				.plugin #header .menu a {
+					font-size: 24px;
+					font-weight: normal;
+					opacity: .33;
+					}
+					.plugin #header .menu a:hover {
+						opacity: 1;
+						border: 0;
+						}
+				.plugin #header .menu hr {
+					display: inline-block;
+					width: 50px;
+					border: 0;
+					border-top: 2px solid;
+					opacity: .2;
+					}
+					.plugin #header .menu hr.sep {
+						width: 1em;
+						}
+				.plugin #header .menu a,
+				.plugin #header .menu a + hr {
+					margin-left: .5em;
+					}
+		.plugin .rub:after {
+			display: block;
+			content: "";
+			clear: both;
+			}
+			.plugin .rub h2 {
+				margin: 2em 0 1em;
+				}
+				.plugin .rub h2 .fa {
+					margin-right: .5em;
+					}
+		.plugin #demo iframe {
+			border-radius: 4px;
+			box-sizing: border-box;
+			}
+		.plugin #demo .extract {
+			text-align: right;
+			}
+			.plugin #demo .extract a {
+				font-size: 11px;
+				}
+		.plugin #what img {
+			float: right;
+			margin: 0 0 1em 1em;
+			width: 150px;
+			}
+		.plugin #versions li b:first-child {
+			font-family: monospace,courier;
+			}
+			.plugin #versions li b:first-child:after {
+				content: "\A0:\A0";
+				font-weight: normal;
+				}
+
+/* colors */
+.plugin #header           { color: #67a; }
+.plugin #content a        { color: #468; }
+#menu.light a:hover,
+.plugin #content a:hover,
+.plugin .rub > a          { color: #79c; }

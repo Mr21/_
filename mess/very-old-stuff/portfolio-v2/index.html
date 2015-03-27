@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mr21's portfolio</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="/_/fa/css/font-awesome.css"/>
+<link rel="stylesheet" href="css/global.css"/>
+<link rel="stylesheet" href="css/nav.css"/>
+<link rel="stylesheet" href="css/whoAmi.css"/>
+<link rel="stylesheet" href="css/curriculum.css"/>
+<link rel="stylesheet" href="css/skills.css"/>
+<link rel="stylesheet" href="css/projects.css"/>
+<link rel="stylesheet" href="css/keepInTouch.css"/>
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "Person",
+	"name" : "Thomas Tortorini",
+	"url" : "http://mr21.fr",
+	"sameAs" : [
+		"http://github.com/mr21",
+		"http://twitter.com/mr21_",
+		"http://youtube.com/mr21u",
+		"http://www.facebook.com/tortorini",
+		"http://www.linkedin.com/in/thomastortorini",
+		"http://plus.google.com/+ThomasTortorini"
+	]
+}
+</script>
+<script src="/_/jquery.min.js"></script>
+<script src="../JsExt/ClassName.js"></script>
+<script src="../JsExt/CSS.js"></script>
+<script src="../JsExt/CSSAnim.js"></script>
+<script src="../JsExt/DOMChange.js"></script>
+<script src="../JsExt/DOMNavigate.js"></script>
+<script src="../JsExt/DOMSelector.js"></script>
+<script src="../JsExt/EventsManager.js"></script>
+<script src="../JsExt/OffsetPosition.js"></script>
+<script src="../JsExt/MathInterp.js"></script>
+<script src="../JsExt/URLHash.js"></script>
+<script src="js/menuVertical.js"></script>
+<script src="js/curriculum.js"></script>
+<script src="js/skills.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/keepInTouch.js"></script>
+<script src="js/main.js"></script>
+<script src="js/Langs.js"></script>
+<script src="js/Hash.js"></script>
+<script>
+window.data = {
+	timeline: [
+		{
+			marginTop: 0,
+			img: "ULaval",
+			en: "<b>Sep.&nbsp;2013</b>Back to school at the <i>Laval University</i>",
+			fr: "<b>Sept.&nbsp;&nbsp;2013</b>Rentrée à l'<i>Université Laval</i>"
+		}, {
+			marginTop: 60,
+			img: "ULaval",
+			en: "<b>Feb.&nbsp;2013</b>Admission at the <i>Laval University</i>",
+			fr: "<b>Févr.&nbsp;&nbsp;2013</b>Admission à l'<i>Université Laval</i>"
+		}, {
+			marginTop: 10,
+			year: 2013
+		}, {
+			marginTop: 30,
+			img: "Epitech",
+			en: "<b>Sep.&nbsp;2012</b>Beginning of the third year",
+			fr: "<b>Sept.&nbsp;&nbsp;2012</b>Commencement de la 3e année"
+		}, {
+			marginTop: 10,
+			img: "Epitech",
+			en: "<b>July&nbsp;2012</b>The second year ends",
+			fr: "<b>Juill.&nbsp;2012</b>La deuxième année s'achève"
+		}, {
+			marginTop: 0,
+			img: "Epitech",
+			en: "<b>June&nbsp;2012</b>I become <i>Astek</i> (technical assistant) for new recruits",
+			fr: "<b>Juin&nbsp;&nbsp;&nbsp;2012</b>Je deviens <i>Astek</i> (assistant technique) pour les nouvelles recrues"
+		}, {
+			marginTop: 40,
+			img: "Epitech",
+			en: "<b>Jan.&nbsp;2012</b>Beginning of the second year",
+			fr: "<b>Janv.&nbsp;&nbsp;2012</b>Début de la deuxième année"
+		}, {
+			marginTop: 0,
+			year: 2012
+		}, {
+			marginTop: 0,
+			img: "BuyPacker",
+			en: "<b>Dec.&nbsp;2011</b>End of the internship",
+			fr: "<b>Déc.&nbsp;&nbsp;&nbsp;2011</b>Fin du stage"
+		}, {
+			marginTop: 30,
+			img: "BuyPacker",
+			en: "<b>Aug.&nbsp;2011</b>During 5 months, I did an internship at <i>BuyPacker</i>",
+			fr: "<b>Août&nbsp;&nbsp;&nbsp;2011</b>Durant 5 mois, j'ai fait mon stage de fin d'année chez <i>BuyPacker</i>"
+		}, {
+			marginTop: 10,
+			img: "Epitech",
+			en: "<b>June&nbsp;2011</b>First year ended",
+			fr: "<b>Juin&nbsp;&nbsp;&nbsp;2011</b>Première année terminée"
+		}, {
+			marginTop: 50,
+			year: 2011
+		}, {
+			marginTop: 20,
+			img: "Epitech",
+			en: "<b>Oct.&nbsp;2010</b>Beginning of the first year at <i>Epitech</i>",
+			fr: "<b>Oct.&nbsp;&nbsp;&nbsp;2010</b>Début de la première année à <i>Epitech</i>"
+		}, {
+			marginTop: 20,
+			img: "PaulCornu",
+			en: "<b>July&nbsp;2010</b>Obtaining the BAC PRO&nbsp;: <i>Graphic Production</i> at the <i>Paul Cornu</i> schools",
+			fr: "<b>Juill.&nbsp;2010</b>Obtention du BAC PRO&nbsp;: <i>Production Graphique</i> aux <i>Lycées Paul Cornu</i>"
+		}, {
+			marginTop: 10,
+			img: "Epitech",
+			en: "<b>Mai&nbsp;&nbsp;2010</b>Admission at <i>Epitech - Paris</i> school",
+			fr: "<b>Mai&nbsp;&nbsp;&nbsp;&nbsp;2010</b>Admission à l'école <i>Epitech - Paris</i>"
+		}, {
+			marginTop: 40,
+			year: 2010
+		}, {
+			marginTop: 50,
+			img: "PaulCornu",
+			en: "<b>July&nbsp;2008</b>Obtaining the BEP&nbsp;: <i>Graphic Industries Professions</i> at the <i>Paul Cornu</i> schools",
+			fr: "<b>Juill.&nbsp;2008</b>Obtention du BEP&nbsp;: <i>Métiers des Industries Graphiques</i> aux <i>Lycées Paul Cornu</i>"
+		}, {
+			marginTop: 60,
+			year: 2008
+		}, {
+			marginTop: 50,
+			img: "PaulCornu",
+			en: "<b>July&nbsp;2004</b>Obtaining the <i>GCSE</i>",
+			fr: "<b>Juill.&nbsp;2004</b>Obtention du <i>Brevet des collèges</i>"
+		}, {
+			marginTop: 60,
+			year: 2004
+		}, {
+			marginTop: 10,
+			en: "<b>Nov.&nbsp;1989</b><i>main() { /* Born */ }</i>",
+			fr: "<b>Nov.&nbsp;&nbsp;&nbsp;1989</b><i>main() { /* Naissance */ }</i>"
+		}, {
+			marginTop: 100,
+			year: 1989
+		}
+	],
+	skills: [
+		{
+			type: 'system',
+			skills: [
+				{
+					skill: 'C',
+					level: '95',
+					en: "I started programming with the <b>C language</b> I acquired an expert level in this field several years later by integrating Epitech.",
+					fr: "J'ai commencé la programmation avec le <b>langage C</b>. J'ai acquis un niveau d'expert dans ce domaine plusieurs années plus tard en intégrant l'Epitech."
+				}, {
+					skill: 'Cpp',
+					level: '60',
+					en: "I approached the Object Oriented for the first time with <b>C++</b>. This paradigm has hardened all my program designs including C and JavaScript.",
+					fr: "J'ai approché l'Orienté Objet pour la première fois avec le <b>C++</b>. Ce paradigme a endurci toutes mes conceptions de programme notamment en C et en JavaScript."
+				}, {
+					skill: 'Linux',
+					level: '33',
+					en: "At Epitech we use <b>Linux</b> every day, this OS seems natural to me now.",
+					fr: "À Epitech nous utilisions <b>Linux</b> tous les jours, cet OS me paraît naturel dorénavant."
+				}, {
+					skill: 'Git',
+					level: '80',
+					en: "Maintain code with <b>Git</b> seems obvious now and obligatory, either for my personal or professional projects.",
+					fr: "Maintenir du code avec <b>Git</b> me semble évident et obligatoire à présent, que ce soit pour mes projets personnels ou professionnels."
+				}
+			]
+		}, {
+			type: 'web',
+			skills: [
+				{
+					skill: 'DHTML',
+					level: 93,
+					en: "I am passionate about <b>Dynamic HTML</b>. This technology allows me to create many interactive web applications (as for example this portfolio).</p>",
+					fr: "Je suis un passionné du <b>Dynamic HTML</b>. Cette technologie me permet de créer de nombreuses applications web interactives (comme ce portfolio par exemple).</p>"
+				}, {
+					skill: 'CSS',
+					level: 85,
+					en: "I know the <b>CSS2.1</b> at 100% as well as all the selectors and all the properties. <b>CSS3</b> is not stranger to me neither.</p>",
+					fr: "Je connais le <b>CSS2.1</b> à 100%, tous les selecteurs ainsi que l'ensemble des propriétés. Le <b>CSS3</b> ne m'est pas étranger non plus.</p>"
+				}, {
+					skill: 'PHP',
+					level: 70,
+					en: "I've practiced some <b>PHP</b> Object Oriented.</p>",
+					fr: "J'ai déjà pratiqué du <b>PHP</b> Orienté Objet.</p>"
+				}, {
+					skill: 'JS',
+					level: 97,
+					en: "The <b>JavaScript</b> has become my favorite language, it allows me to push all the limits of the Web. I know all these details, all these standard objects that allows me to recode my own framework.</p>",
+					fr: "Le <b>JavaScript</b> est devenu mon langage préféré, il me permet de repousser toutes les limites du Web. Je connais tous ces details, tous ces objets standards ce qui me permet de recoder mon propre framework (tel jQuery).</p>"
+				}, {
+					skill: 'DOM',
+					level: 100,
+					en: "The <b>DOM Tree</b> of a web page has no secrets for me.</p>",
+					fr: "Le <b>DOM Tree</b> d'une page web n'a plus aucun secret pour moi.</p>"
+				}, {
+					skill: 'jQuery',
+					level: 92,
+					en: "I mastered the <b>jQuery</b> library from top-to-toe, I read their code regularly and I contribute at this project as soon as possible.</p>",
+					fr: "Je maîtrise la bibliothèque <b>jQuery</b> de fond en comble, je lis leur code régulièrement et je contribue au projet dès que possible.</p>"
+				}, {
+					skill: 'SQL',
+					level: 85,
+					en: "The exchanges between database and the server are too important to underestimate the importance of the optimized <b>SQL</b> queries.</p>",
+					fr: "Les échanges entre la base de donnée et le serveur sont trop importants pour sous-estimer l'importance du <b>SQL</b> et ses requêtes optimisées.</p>"
+				}
+			]
+		}, {
+			type: 'graphism',
+			skills: [
+				{
+					skill: 'PhotoShop',
+					level: 55,
+					en: "I was accustomed to using <b>PhotoShop</b> throughout my professional course in high school.</p>",
+					fr: "J'ai été habitué à utiliser <b>PhotoShop</b> durant tout mon cursus professionnel au lycée.</p>"
+				}, {
+					skill: 'Illustrator',
+					level: 80,
+					en: "All along my BAC PRO Printing I learned how to use the main Adobe tools dedicated to 2D graphics, including <b>Illustrator</b> to create vector logos and more.</p>",
+					fr: "Tout au long de mon bac pro Imprimerie j'ai appris à me servir des principaux outils d'Adobe dédiés au graphisme 2D, dont <b>Illustrator</b> pour créer des logos vectoriels et autres.</p>"
+				}, {
+					skill: 'InDesign',
+					level: 75,
+					en: "With <b>InDesign</b> I have the capacities to design some PDF or any other documents with a good quality.</p>",
+					fr: "Avec <b>InDesign</b> j'ai les capacités pour concevoir des PDF ou n'importe quels autres types de documents avec une très bonne qualité.</p>"
+				}, {
+					skill: 'Maya',
+					level: 25,
+					en: "I learned on the heap, the basics of <b>Autodesk Maya</b> to make my own 3D models to be integrated later in OpenGL applications.</p>",
+					fr: "J'ai appris, sur le tas, les bases de <b>Autodesk Maya</b> pour faire mes propres modèles 3D pour être integrés ensuite dans des applications OpenGL.</p>"
+				}
+			]
+		}
+	],
+	projects: [
+		{
+			name: "KillDemAll",
+			link: "KillDemAll/",
+			img: "/killdemall/thumbnail.jpg",
+			bg: "rgb(255, 253, 64)",
+			txt: "#000",
+			en: "A tiny <b>Shoot'em Up</b> game viewed from the top developed in JavaScript with the <b>&lt;canvas&gt;</b> technology.",
+			fr: "Un mini-jeu de type <b>Shoot'em Up</b> vu du dessus développé en JavaScript avec la technologie <b>&lt;canvas&gt;</b>."
+		}, {
+			name: "CarouselParallax",
+			link: "carousel-parallax/",
+			img: "/carousel-parallax/thumbnail.jpg",
+			bg: "rgb(104, 131, 255)",
+			txt: "#000",
+			en: "This script uses the CSS <b>z-index</b> property of the different elements to give a <b>3D effect</b>.",
+			fr: "Ce script exploite la propriété CSS <b>z-index</b> des différents éléments pour donner un <b>effet 3D</b>."
+		}, {
+			name: "Canvasloth",
+			link: "canvasloth/",
+			img: "https://mr21.github.io/canvasloth/thumbnail.jpg",
+			bg: "rgb(243, 99, 38)",
+			txt: "#fff",
+			en: "<b>Canvasloth</b> is a very minimal framework to manage an <b>HTML5-Canvas</b> application. It <b>manages the events</b>, prepares the <b>DOM</b> for the <b>HUD</b>, waits until all the assets are loaded, cancels the keys repetition of the keyboard, provides a tiny time manager and that's it.",
+			fr: "<b>Canvasloth</b> est un framework très minime pour gérer une application utilisant l'élément <b>HTML5 Canvas</b>. Il <b>gère les événements</b>, prépare le <b>DOM</b> pour le <b>HUD</b>, attend jusqu'à ce que toutes les ressources soient chargées, annule la répétition des touches du clavier, fournit un simple gestionnaire de temps et c'est tout."
+		}, {
+			name: "GitFast",
+			link: "https://github.com/Mr21/gitfast/",
+			img: "/gitfast/thumbnail.jpg",
+			bg: "rgb(240, 80, 51)",
+			txt: "#fff",
+			en: "<b>GitFast</b>.sh is a <b>Bash</b> file offering many intelligent <b>alias</b> to accelerate the use of <b>Git</b>.",
+			fr: "<b>GitFast</b>.sh est un fichier <b>Bash</b> offrant une serie d'<b>alias</b> intelligents pour accélérer l'usage de <b>Git</b>."
+		}, {
+			name: "jQuery - drag 'n' drop",
+			link: "jquery-dragndrop/",
+			img: "https://mr21.github.io/jquery-dragndrop/thumbnail.jpg",
+			bg: "rgb(216, 126, 11)",
+			txt: "#000",
+			en: "This <b>jQuery plugin</b> provides a fluid drag 'n' drop with many <b>visual feedback</b> via a whole series of callback.",
+			fr: "Ce <b>plugin jQuery</b> propose un drag 'n' drop fluide avec de nombreux <b>retours visuels</b> via toute une serie de callback."
+		}, {
+			name: "jQuery - tabs",
+			link: "jquery-tabs/",
+			img: "https://mr21.github.io/jquery-tabs/thumbnail.jpg",
+			bg: "rgb(104, 148, 126)",
+			txt: "#000",
+			en: "This is another plugin to manage some <b>tabs</b>. By default this plugin propose something very basic, just like <i>jQueryUI-tabs</i>. But the amazing here is if you also include the plugin <i>jQuery-dragndrop</i> in your HTML, you'll be able to <b>reorder the tabs as you want with your mouse</b> (like <i>Chrome</i> or <i>Sublime Text</i>).",
+			fr: "Ceci est un énième plugin pour gérer des <b>onglets</b>. Par défaut ça propose une gestion basique telle <i>jQueryUI-tabs</i>. La magie opère dans le cas ou l'on utilise aussi <i>jQuery-dragndrop</i>, il sera alors possible de <b>réorganiser les onglets directement avec la souris</b> (comme avec <i>Chrome</i> ou <i>Sublime Text</i>)."
+		}, {
+			name: "Windows 8 - loading",
+			link: "css-animations/windows8-loading/",
+			img: "https://mr21.github.io/css-animations/windows8-loading/thumbnail.jpg",
+			bg: "rgb(205, 103, 154)",
+			txt: "#fff",
+			en: "This is a tiny <b>Sass</b> projects, wherein I have reproduced the tiny animation who makes everybody waiting on <b>Windows 8</b> only with the <b>@keyframes</b> offered by the <b>CSS3</b>.<br/>I have also changed a little detail at the end of the loop.",
+			fr: "Ceci est un petit projet <b>Sass</b>, où j'ai reproduit l'animation de chargement qui fait attendre tout le monde sur <b>Windows 8</b> uniquement avec les <b>@keyframes</b> offertes par le <b>CSS3</b>.<br/>Et j'ai aussi changé un détail à la fin de la boucle."
+		}, {
+			name: "learnCSS",
+			link: "learncss/",
+			img: "https://mr21.github.io/learncss/thumbnail.jpg",
+			bg: "rgb(178, 12, 61)",
+			txt: "#fff",
+			en: "Learn interactively all the <b>CSS selectors</b>&nbsp;:<br/>.class, #id, grouping, [attributes], :pseudos-classes, the +brothers~ and >parents selections.",
+			fr: "Apprendre interactivement les <b>selecteurs CSS</b>&nbsp;:<br/>les .class, les #id, le grouping, les [attributs], les :pseudos-classes, les sélections par +frères~ ou par >parents."
+		}, {
+			name: "YouTube - playlists manager",
+			link: "youtube-playlists-manager/",
+			img: "https://mr21.github.io/youtube-playlists-manager/thumbnail.jpg",
+			bg: "rgb(232, 18, 18)",
+			txt: "#fff",
+			en: "This web application simplify the usage of your own <b>YouTube's playlists</b>. This project use my <b>jQuery</b> plugins and the <b>YouTube Data API</b>.",
+			fr: "Cette application web simplifie l'utilisation de vos <b>playlists YouTube</b>. Ce projet utilise mes plugins <b>jQuery</b> ainsi que l'<b>API Data YouTube</b>."
+		}, {
+			name: "Artificial Orbit Simulation",
+			link: "artificial-orbit-simulation/",
+			img: "https://mr21.github.io/artificial-orbit-simulation/thumbnail.jpg",
+			bg: "rgb(14, 49, 89)",
+			txt: "#fff",
+			en: "This is a small <b>&lt;canvas&gt; experiment</b> who simulates the gravity around the Earth.<br/>You can control a <b>tiny ship</b> with the arrow keys of your keyboard. So, it's easy to <b>understand</b> how the <b>placement into orbit</b> of an object around a planet works.",
+			fr: "Voici une petite <b>expérience &lt;canvas&gt;</b> qui simule la gravité autour de la Terre.<br/>Vous pouvez contrôler un petit vaisseau avec les flèches du clavier. Ainsi, il est facile de <b>comprendre</b> comment fonctionne le <b>placement en orbite</b> d'un objet autour d'une planète."
+		}
+	]
+};
+</script>
+</head>
+<body>
+	<div id="global">
+		<div id="nav">
+			<div class="line left"></div>
+			<div class="line right"></div>
+			<div id="welcomeMessage">
+				<div lang="en"></div>
+				<div lang="fr"></div>
+			</div>
+			<a href="#" class="whoAmI"><i class="fa fa-user"></i><span lang="en">Who am I&nbsp;?</span><span lang="fr">Qui suis-je&nbsp;?</span></a>
+			<a href="#" class="curriculum"><i class="fa fa-send"></i><span lang="en">Resume</span><span lang="fr">Parcours</span></a>
+			<a href="#" class="skills"><i class="fa fa-gears"></i><span lang="en">Skills</span><span lang="fr">Compétences</span></a>
+			<a href="#" class="projects"><i class="fa fa-code"></i><span lang="en">Projects</span><span lang="fr">Projets</span></a>
+			<a href="#" class="keepInTouch"><i class="fa fa-envelope"></i><span lang="en">Keep in touch</span><span lang="fr">Contactez-moi</span></a>
+		</div>
+		<div id="languages">
+			<div><span></span></div>
+			<a lang="fr" href="#Français"></a>
+			<a lang="en" href="#English"></a>
+		</div>
+		<div id="windowContainer">
+			<div id="startPage">
+				<div class="title">
+					<h1 lang="en"><span>Mr21</span>'s portfolio</h1>
+					<h1 lang="fr">Le portfolio de <span>Mr21</span></h1>
+					<hr/>
+					<h2>
+						<span>(D)HTML</span>
+						<span>JavaScript</span>
+						<span>CSS(3)</span>
+						<span>
+							<span lang="en">Creativity</span>
+							<span lang="fr">Créativité</span>
+						</span>
+						<span>
+							<span lang="en">no limit</span>
+							<span lang="fr">aucune limite</span>
+						</span>
+					</h2>
+				</div>
+			</div>
+			<div id="window">
+				<div id="whoAmI">
+					<div class="padding">
+						<div class="resum">
+							<div>
+								<i class="fa fa-user"></i>
+								<span class="text">Thomas TORTORINI</span>
+							</div>
+							<div>
+								<i class="fa fa-at"></i>
+								<span class="text">thomastortorini@gmail.com</span>
+							</div>
+							<div>
+								<i class="fa fa-phone"></i>
+								<span class="text">+33 6 95 39 62 21</span>
+							</div>
+							<div>
+								<i class="fa fa-birthday-cake"></i>
+								<span class="text" lang="en">21th November 1989</span>
+								<span class="text" lang="fr">21 Novembre 1989</span>
+							</div>
+							<div>
+								<i class="fa fa-map-marker"></i>
+								<span class="text"><a target="_blank" href="http://bit.ly/UBSKtK">Villers-sur-Mer – 14640 – France</a></span>
+							</div>
+						</div>
+						<p>
+							<a target="_blank" href="img/epitech_2015_paris.jpg">
+								<img src="img/epitech_2015_paris_thumbnail.jpg" alt=""/><br/>
+								{EPITECH.} – Promotion 2015
+							</a>
+							<p lang="en">
+								I am <b>Thomas</b> (the one marked by the red arrow in the photo) aka “<b>Mr21</b>”.<br/>
+								Everything began in <b>2006</b> when my godfather gave me my first laptop.
+								Once this old ThinkPad in my hands, I started to play with the <b>HTML</b>,
+								I was immediately fascinated by the creative side of this thing.
+								Wanting to go further, I bought, read and learned almost by heart the <b>K&amp;R</b>.
+								During my free time, I began to understand the fundamentals of <b>C</b>.
+								But the love I had for the programming occupied a place increasingly important in my life,
+								to a degree that it became incompatible with the school.
+								This is why <b>I joined Epitech in 2010</b>.
+								However I am never satisfied of its courses lightened.
+								For example, my skills in <b>JavaScript</b> or in the Web in general have been learned by myself.
+								Unlike many engineers, I don't denigrate the world of graphics I think instead
+								it's very important to have a foot in both fields.
+								Thus I learned on the heap how to master <b>Photoshop</b> and other
+								essential softwares, such as <b>Illustrator</b> or <b>InDesign</b>,
+								I also have some knowledge of <b>3D modeling via Maya</b>.<br/>
+								So, thank you very much for your visit with hope to keep in touch.
+							</p>
+							<p lang="fr">
+								Je suis <b>Thomas</b> (celui pointé par la flèche rouge sur la photo) aka «&nbsp;<b>Mr21</b>&nbsp;».<br/>
+								Tout a commencé en <b>2006</b> quand mon parrain m'a donné mon premier laptop.
+								Une fois ce vieux ThinkPad entre les mains, j'ai commencé à jouer avec le <b>HTML</b>,
+								j'ai tout de suite été passionné par le côté créatif de la chose.
+								Voulant aller plus loin, j'ai acheté, lu et appris presque par cœur le <b>K&amp;R</b>.
+								Durant mes heures perdues Je commencais à comprendre les fondamentaux du <b>C</b>.
+								Mais l'amour que j'avais pour la programmation occupait une place de plus en plus importante dans ma vie,
+								à un point que ça en est devenu incompatible avec le lycée.
+								C'est la raison pour laquelle <b>j'ai rejoint Epitech en 2010</b>.
+								Cependant je ne me suis jamais contenté de ses cours allégés.
+								Par exemple, mes compétences accrues en <b>JavaScript</b> ou dans le Web en général ont été apprises par moi-même.
+								À l'inverse de beaucoup d'ingénieurs, je ne dénigre pas le monde du graphisme je pense au contraire
+								qu'il est très important d'avoir un pied dans les deux domaines.
+								De ce fait j'ai appris sur le tas à maîtriser <b>Photoshop</b> ainsi que d'autres logiciels
+								incontournables, tel que <b>Illustrator</b> ou <b>InDesign</b>,
+								j'ai également quelques notions de <b>modélisation 3D via Maya</b>.<br/>
+								Sur ce, je vous remercie beaucoup de votre visite en espérant garder contact.
+							</p>
+						</p>
+					</div>
+				</div>
+				<div id="curriculum">
+					<div class="padding">
+						<div class="timeline"></div>
+					</div>
+				</div>
+				<div id="skills">
+					<div class="padding">
+						<div>
+							<div class="menuContainer"><!-- Wrapper supplementaire pour contrer le bug de Chrome au sujet du border-radius/absolute -->
+								<div class="menuVertical">
+									<a class="system"   href="#system"  ><i class="fa fa-terminal"></i></a>
+									<a class="web"      href="#web"     ><i class="fa fa-cloud"></i></a>
+									<a class="graphism" href="#graphism"><i class="fa fa-paint-brush"></i></a>
+								</div>
+							</div>
+							<div class="textContainer">
+								<div class="nothing">
+									<div class="system"  ><div class="circle"></div><div class="line"></div><b lang="en">System programming</b><b lang="fr">Programmation système</b></div>
+									<div class="web"     ><div class="circle"></div><div class="line"></div><b lang="en">Web programming</b   ><b lang="fr">Programmation web</b></div>
+									<div class="graphism"><div class="circle"></div><div class="line"></div><b lang="en">Graphism</b          ><b lang="fr">Graphisme</b></div>
+								</div>
+								<div class="page system">
+									<h2><span lang="en">System programming</span><span lang="fr">Programmation système</span></h2>
+								</div>
+								<div class="page web">
+									<h2><span lang="en">Web programming</span><span lang="fr">Programmation web</span></h2>
+								</div>
+								<div class="page graphism">
+									<h2><span lang="en">Graphism</span><span lang="fr">Graphisme</span></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="projects">
+					<div class="padding">
+						<p lang="en">
+							As part of my studies, I have coded in a team of students for a few software such as&nbsp;:
+							<a target="_blank" href="http://en.wikipedia.org/wiki/Z_shell"/>Z shell</a>,
+							<a target="_blank" href="http://en.wikipedia.org/wiki/POV-Ray"/>POV-Ray</a>,
+							<a target="_blank" href="http://en.wikipedia.org/wiki/FileZilla">FileZilla</a>, …
+							These projects were mainly written in <b>C</b> or <b>C++</b> and lacked originality,
+							hence I prefer showcasing my <b>extra-curricular</b> projects as it shows my creative side along with my technical capabilities.
+						</p>
+						<p lang="fr">
+							Dans le cadre de mes études, j'ai eu à <b>recoder</b> en équipe avec d'autres étudiants des logiciels tels que&nbsp;:
+							<a target="_blank" href="http://fr.wikipedia.org/wiki/Z_Shell"/>Z Shell</a>,
+							<a target="_blank" href="http://fr.wikipedia.org/wiki/POV-Ray"/>POV-Ray</a>,
+							<a target="_blank" href="http://fr.wikipedia.org/wiki/FileZilla">FileZilla</a>, …
+							Ces projets ont été écrits majoritairement en <b>C</b> ou en <b>C++</b> et manquent cruellement d'originalité,
+							c'est pourquoi j'ai choisi d'exposer ici mes projets <b>extra-scolaire</b> mettant en valeur mon côté créatif.
+						</p>
+					</div>
+				</div>
+				<div id="keepInTouch">
+					<div class="padding">
+						<h2 class="emails"><i class="fa fa-at"></i><span>Emails</span></h2>
+						<ul>
+							<li>
+								<a target="_blank" href="mailto:thomastortorini@gmail.com"><b>thomastortorini@gmail.com</b></a>
+								<i lang="en">(main address)</i>
+								<i lang="fr">(adresse principale)</i>
+							</li>
+							<li>
+								<a target="_blank" href="mailto:thomas.tortorini-kanan@epitech.eu">thomas.tortorini-kanan@epitech.eu</a>
+								<i lang="en">(redirect to thomastortorini@gmail.com)</i>
+								<i lang="fr">(redirigée vers thomastortorini@gmail.com)</i>
+							</li>
+							<li>
+								<a target="_blank" href="mailto:thomas.tortorini.1@ulaval.ca">thomas.tortorini.1@ulaval.ca</a>
+								<i lang="en">(redirect to thomastortorini@gmail.com)</i>
+								<i lang="fr">(redirigée vers thomastortorini@gmail.com)</i>
+							</li>
+						</ul>
+						<h2 class="links"><i class="fa fa-link"></i><span lang="en">Links</span><span lang="fr">Liens</span></h2>
+						<ul>
+							<li>
+								<a target="_blank" href="http://github.com/Mr21">github.com/<b>Mr21</b></a>
+								<i lang="en">(GitHub is my homepage)</i>
+								<i lang="fr">(GitHub est ma page d'accueil)</i>
+							</li>
+							<li>
+								<a target="_blank" href="http://facebook.com/Tortorini">facebook.com/<b>Tortorini</b></a>
+							</li>
+							<li>
+								<a target="_blank" href="https://plus.google.com/+ThomasTortorini/about">google.com/+<b>ThomasTortorini</b></a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.linkedin.com/in/ThomasTortorini">linkedin.com/in/<b>ThomasTortorini</b></a>
+							</li>
+							<li>
+								<a target="_blank" href="http://youtube.com/Mr21u">youtube.com/<b>Mr21u</b></a>
+							</li>
+							<li>
+								<a target="_blank" href="https://twitter.com/Mr21_">twitter.com/<b>Mr21_</b></a>
+							</li>
+							<li>
+								<a target="_blank" href="http://siteduzero.com/membres/mr21-42997">siteduzero.com/membres/<b>mr21</b>-42997</a>
+								<i lang="en">(For a moment, I have been an activ user on the Language C forum)</i>
+								<i lang="fr">(J'ai pendant un temps été actif sur le forum langage C)</i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+#keepInTouch h2,
+#keepInTouch li {
+	opacity: 0;
+	}
+#keepInTouch *.show {
+	opacity: 1;
+	}
+
+#keepInTouch h2 {
+	margin-left: -50px;
+	}
+	#keepInTouch h2.show {
+		margin-left: 0;
+		}
+	#keepInTouch h2 i {
+		margin-right: .5em;
+		}
+	#keepInTouch h2 span {
+		font-size: 14px;
+		}
+		#keepInTouch h2 span:after {
+			content: "\A0:";
+			}
+
+#keepInTouch ul {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 30px;
+	}
+	#keepInTouch li {
+		line-height: 2.5em;
+		}
+		#keepInTouch a:before {
+			display: inline-block;
+			content: "";
+			vertical-align: middle;
+			width: 24px;
+			height: 24px;
+			margin-right: 8px;
+			background: url(sprites.png);
+			}
+			#keepInTouch a[href*=gmail]:before      { background-position:  -80px -200px; }
+			#keepInTouch a[href*=epitech]:before    { background-position: -104px -200px; }
+			#keepInTouch a[href*=ulaval]:before     { background-position: -128px -200px; }
+			#keepInTouch a[href*=github]:before     { background-position:  -80px -224px; }
+			#keepInTouch a[href*=siteduzero]:before { background-position: -104px -224px; }
+			#keepInTouch a[href*=facebook]:before   { background-position: -128px -224px; }
+			#keepInTouch a[href*=youtube]:before    { background-position: -152px -224px; }
+			#keepInTouch a[href*=twitter]:before    { background-position: -176px -224px; }
+			#keepInTouch a[href*=linkedin]:before   { background-position: -200px -224px; }
+			#keepInTouch a[href*=plus]:before       { background-position: -224px -224px; }
+		#keepInTouch a ~ i {
+			margin-left: 10px;
+			font-size: 10px;
+			color: #444;
+			}

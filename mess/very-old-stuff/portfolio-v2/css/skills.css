@@ -1,0 +1,197 @@
+#skills .system   { border-color: #0E72CC; }
+#skills .web      { border-color: #FF215F; }
+#skills .graphism { border-color: #FFF13B; }
+
+#skills .padding > div {
+	position: absolute;
+	left: 95px;
+	right: 15px;
+	top: 18px;
+	bottom: 35px;
+	}
+	#skills .menuContainer {
+		position: absolute;
+		z-index: 1;
+		width: 80px;
+		margin-left: -79px;
+		}
+	#skills .menuVertical,
+	#skills .textContainer {
+		border: 1px solid #222;
+		border-radius: 5px;
+		background: #050505;
+		}
+		#skills .menuVertical {
+			overflow: hidden;
+			border-right: none;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			}
+			#skills .menuVertical a {
+				display: block;
+				padding: 15px 0;
+				text-align: center;
+				border-width: 0px;
+				border-style: solid;
+				text-decoration: none;
+				}
+				#skills .menuVertical a:hover,
+				#skills .menuVertical a:focus {
+					background: #0a0a0a;
+					color: inherit;
+					}
+				#skills .menuVertical a.selected {
+					background: #101010;
+					}
+				#skills .menuVertical a i {
+					font-size: 32px;
+					}
+	#skills .textContainer {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		overflow: auto;
+		border-top-left-radius: 0;
+		}
+		#skills .nothing {
+			position: absolute;
+			top: 25px;
+			left: 20px;
+			right: 0;
+			visibility: hidden;
+			}
+			#skills .nothing.show {
+				visibility: visible;
+				}
+			#skills .nothing > div {
+				position: relative;
+				height: 1px;
+				width: 100%;
+				opacity: 0;
+				}
+				#skills .nothing > div + div {
+					margin-top: 60px;
+					}
+				#skills .nothing > div.show {
+					opacity: 1;
+					}
+				#skills .nothing .circle {
+					position: absolute;
+					width: 9px;
+					height: 9px;
+					border-radius: 100%;
+					border-width: 3px;
+					border-style: solid;
+					border-color: inherit;
+					opacity: 0;
+					}
+					#skills .nothing .circle.show {
+						opacity: 1;
+						}
+				#skills .nothing .line {
+					position: absolute;
+					right: 15px;
+					margin-top: 6px;
+					border-top-width: 3px;
+					border-top-style: solid;
+					border-color: inherit;
+					left: 200px;
+					}
+					#skills .nothing .show .line {
+						left: 14px;
+						}
+				#skills .nothing b {
+					position: absolute;
+					right: 50px;
+					background: #000;
+					padding: 0 7px;
+					}
+		#skills .page {
+			display: none;
+			opacity: 0;
+			padding: 15px 15px 3px;
+			min-height: 180px;
+			}
+			#skills .page h2 {
+				display: inline-block;
+				margin-bottom: 15px;
+				font-weight: bold;
+				font-size: 14px;
+				padding-bottom: 3px;
+				border-color: inherit;
+				border-bottom-width: 3px;
+				border-bottom-style: solid;
+				}
+			#skills .skill {
+				overflow: hidden;
+				padding: 7px;
+				border-color: inherit;
+				}
+				#skills .skill + .skill {
+					border-top: 1px dashed #222;
+					}
+				#skills .skill .header {
+					float: left;
+					height: 24px;
+					border-color: inherit;
+					}
+					#skills .skill .header > * {
+						float: left;
+						}
+					#skills .skill .icon {
+						width: 24px;
+						height: 100%;
+						background: url("sprites.png");
+						}
+					#skills .C           .icon { background-position:  -80px -104px; }
+					#skills .Cpp         .icon { background-position: -104px -104px; }
+					#skills .Linux       .icon { background-position: -128px -104px; }
+					#skills .Git         .icon { background-position: -152px -104px; }
+					#skills .DHTML       .icon { background-position:  -80px -128px; }
+					#skills .CSS         .icon { background-position: -104px -128px; }
+					#skills .PHP         .icon { background-position: -128px -128px; }
+					#skills .JS          .icon { background-position: -152px -128px; }
+					#skills .DOM         .icon { background-position: -176px -128px; }
+					#skills .jQuery      .icon { background-position: -200px -128px; }
+					#skills .SQL         .icon { background-position: -224px -128px; }
+					#skills .PhotoShop   .icon { background-position:  -80px -152px; }
+					#skills .Illustrator .icon { background-position: -104px -152px; }
+					#skills .InDesign    .icon { background-position: -128px -152px; }
+					#skills .Maya        .icon { background-position: -152px -152px; }
+					#skills .skill .separator {
+						display: block;
+						width: 1px;
+						height: 100%;
+						margin: 0 10px;
+						background: #222;
+						}
+					#skills .skill .metric {
+						position: relative;
+						width: 100px;
+						height: 10px;
+						margin-top: 7px;
+						background: #1a1a1a;
+						border-color: inherit;
+						border-radius: 2px;
+						overflow: hidden;
+						}
+						#skills .skill .metric div {
+							position: absolute;
+							width: 2px;
+							height: 100%;
+							border-width: 0 0 0 999px;
+							border-style: solid;
+							border-color: inherit;
+							margin-left: -999px;
+							}
+				#skills .skill p {
+					line-height: 25px;
+					margin-bottom: -4px;
+					margin-left: 166px;
+					}
+					#skills .skill p b {
+						padding: 0 3px;
+						border: 1px solid #333;
+						border-radius: 3px;
+						}
