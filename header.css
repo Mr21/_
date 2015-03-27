@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background: #333;
+	}
+body,
+#header {
+	color: #aaa;
+	}
+#header {
+	position: relative;
+	z-index: 100;
+	padding: 0 .5em;
+	font-size: 12px;
+	line-height: 31px;
+	background: #222;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	}
+	#header .fb-like > span {
+		vertical-align: middle !important;
+		}
+	#header .fa {
+		font-size: 18px;
+		}
+	#header > *,
+	#header > .lang * {
+		vertical-align: middle;
+		}
+	#header > .lang {
+		display: inline-block;
+		white-space: nowrap;
+		}
+		#header > .lang a[title] {
+			margin-left: 5px;
+			}
+		#header > .lang .flags {
+			display: inline-block;
+			white-space: nowrap;
+			overflow: hidden;
+			transition: width .2s ease;
+			width: 0;
+			}
+			#header > .lang:hover .flags {
+				width: 46px;
+				}
+	#header h1 {
+		display: inline;
+		margin: 0;
+		font: bold 14px sans-serif;
+		}
+	#header .fa-caret-right {
+		font-size: 12px;
+		opacity: .2;
+		}
+	#header .lang,
+	#header a {
+		text-decoration: none;
+		transition: color .2s ease;
+		color: inherit;
+		}
+		#header .lang:hover,
+		#header a:hover {
+			color: #ddd;
+			}
