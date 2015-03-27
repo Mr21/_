@@ -1,49 +1,37 @@
 #header {
-	border-bottom: 1px solid rgba(0, 0, 0, .15);
 	background: rgba(196, 216, 236, .5);
 	}
 	#header .content {
-		display: table;
-		height: 50px;
+		position: relative;
 		padding: 0 10px;
 		color: rgb(30, 60, 90);
+		background: rgba(0,0,0,.1);
 		}
-		#header .content > * {
-			display: table-cell;
-			vertical-align: middle;
+		#header .logo *,
+		#header .right a {
+			line-height: 50px;
 			}
-			#header .content > * > *,
-			#header .profile {
-				margin: 0 10px;
+		#header .logo {
+			padding: 0 9px;
+			}
+			#header .logo * {
+				vertical-align: middle;
 				}
-		#header .logo * {
-			box-sizing: border-box;
-			width: 145px;
-			height: 32px;
-			background: url("logo.png");
-			transition: width .25s;
-			}
-		#header img {
-			display: block;
-			height: 32px;
-			}
-		#header a {
-			color: inherit;
-			font-size: 24px;
-			}
-			#header a:hover {
-				background: rgba(0,0,0,.05);
+			#header .logo span {
+				display: inline-block;
+				width: 127px;
+				overflow: hidden;
+				text-align: left;
+				font-family: "Fjalla One";
+				font-size: 32px;
+				transition: width .25s;
 				}
-		#header .profile img {
-			padding: 0;
-			border-radius: 2px;
-			}
-		#header .profile img,
-		#header input[type="text"] {
-			border: 1px solid rgba(0,0,0,.2);
-			}
-		#header .search {
-			width: 100%;
+		#header form {
+			position: absolute;
+			top: 8px;
+			left: 211px;
+			right: 267px;
+			transition: left .25s;
 			}
 			#header input[type="text"] {
 				width: 100%;
@@ -56,25 +44,56 @@
 				position: absolute;
 				top: -100px;
 				}
+		#header .right {
+			float: right;
+			}
 
-@media screen and (max-width: 740px) {
-	#header .logo * {
-		width: 33px;
+		#header a {
+			display: inline-block;
+			min-width: 50px;
+			text-align: center;
+			color: inherit;
+			font-size: 24px;
+			}
+			#header a:hover {
+				background: rgba(0,0,0,.1);
+				}
+			#header img {
+				display: inline-block;
+				margin-top: -2px;
+				vertical-align: middle;
+				height: 32px;
+				}
+		#header .profile img,
+		#header input[type="text"] {
+			border: 1px solid rgba(0,0,0,.2);
+			}
+		#header .profile img {
+			border-radius: 2px;
+			}
+
+@media screen and (max-width: 680px) {
+	#header .logo span {
+		width: 0px;
+		}
+	#header form {
+		left: 80px;
 		}
 }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 543px) {
 	#header .link-search {
 		display: none;
 		}
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 542px) {
 	#header form,
-	#header.show-search .search ~ * {
+	#header.show-search form ~ * {
 		display: none;
 		}
 	#header.show-search form {
 		display: block;
+		right: 18px;
 		}
 	#header .link-search * {
 		opacity: .33;
