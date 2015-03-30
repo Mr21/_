@@ -1,14 +1,19 @@
 #header {
-	background: rgba(196, 216, 236, .5);
+	background: rgb(225, 235, 245);
+	color: rgb(30, 60, 90);
 	}
+	#header .more-toHide-container,
+	#header .content {
+		background: rgb(202, 211, 220);
+		}
 	#header .content {
 		position: relative;
-		padding: 0 10px;
-		color: rgb(30, 60, 90);
-		background: rgba(0,0,0,.1);
 		}
+		#header.show-btns .content {
+			border-bottom: 1px solid rgba(255, 255, 255, .33);
+			}
 		#header .logo *,
-		#header .right a {
+		#header .a {
 			line-height: 50px;
 			}
 		#header .logo {
@@ -21,17 +26,17 @@
 				display: inline-block;
 				width: 127px;
 				overflow: hidden;
-				text-align: left;
+				margin-left: 5px;
 				font-family: "Fjalla One";
 				font-size: 32px;
-				transition: width .25s;
+				transition: all .25s;
 				}
 		#header form {
 			position: absolute;
 			top: 8px;
-			left: 211px;
-			right: 267px;
-			transition: left .25s;
+			left: 202px;
+			right: 260px;
+			transition: all .25s;
 			}
 			#header input[type="text"] {
 				width: 100%;
@@ -44,14 +49,31 @@
 				position: absolute;
 				top: -100px;
 				}
+		#header .link-search {
+			opacity: 1;
+			transition: all .25s;
+			}
+			#header .link-search * {
+				opacity: .33;
+				}
 		#header .right {
 			float: right;
+			visibility: visible;
+			opacity: 1;
+			transition: all .25s;
 			}
-
+			#header .a {
+				width: 50px;
+				text-align: center;
+				vertical-align: top;
+				}
+				#header .more-btn,
+				#header .more-toHide {
+					overflow: hidden;
+					transition: width .25s;
+					}
 		#header a {
 			display: inline-block;
-			min-width: 50px;
-			text-align: center;
 			color: inherit;
 			font-size: 24px;
 			}
@@ -67,35 +89,68 @@
 		#header .profile img,
 		#header input[type="text"] {
 			border: 1px solid rgba(0,0,0,.2);
+			border-radius: 3px;
 			}
-		#header .profile img {
-			border-radius: 2px;
+		#header .more-toHide-container {
+			position: absolute;
+			height: 50px;
+			top: 0;
+			left: 0;
+			right: 0;
+			text-align: right;
+			transition: top .25s;
 			}
+			#header.show-btns .more-toHide-container {
+				top: 50px;
+				}
 
 @media screen and (max-width: 680px) {
 	#header .logo span {
-		width: 0px;
+		width: 0;
+		margin-left: 0;
 		}
 	#header form {
-		left: 80px;
+		left: 70px;
 		}
 }
 
 @media screen and (min-width: 543px) {
 	#header .link-search {
-		display: none;
+		opacity: 0;
+		visibility: hidden;
 		}
 }
 @media screen and (max-width: 542px) {
-	#header form,
-	#header.show-search form ~ * {
-		display: none;
+	#header form {
+		right: 308px;
+		opacity: 0;
 		}
 	#header.show-search form {
 		display: block;
-		right: 18px;
+		right: 10px;
+		opacity: 1;
 		}
-	#header .link-search * {
-		opacity: .33;
+	#header.show-search .right {
+		visibility: hidden;
+		opacity: 0;
+		}
+}
+
+@media screen and (min-width: 401px) {
+	#header .right .more-btn {
+		width: 0;
+		}
+}
+@media screen and (max-width: 400px) {
+	#header form {
+		right: 157px;
+		}
+	#header .more-toHide {
+		width: 0;
+		}
+	#header.show-btns .more-toHide {
+		position: relative;
+		width: 50px;
+		transition: initial;
 		}
 }

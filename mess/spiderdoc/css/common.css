@@ -5,13 +5,20 @@ a {
 .width {
 	box-sizing: border-box;
 	width: 80%;
+	min-width: 900px;
 	margin-left: 10%;
-	transition: all .25s;
 	}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1125px) { /* 1125 = 100/80*900 */
 	.width {
-		width: 100%;
-		margin-left: 0%;
+		margin: 0 auto;
 		}
 }
+
+@media screen and (max-width: 900px) {
+	.width {
+		width: 100%;
+		min-width: 0;
+		}
+}
+
