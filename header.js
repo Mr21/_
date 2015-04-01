@@ -5,7 +5,7 @@
 		return;
 	}
 
-	window.lg = function(s) { return console.log(s), true; }
+	window.lg = function() { return console.log.apply(console, arguments), true; }
 
 	function attachEvent(e, v, f) {
 		if (e.attachEvent)
