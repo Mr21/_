@@ -1,6 +1,10 @@
 (function() {
 
-	if (location.protocol === "http:" && location.host !== "localhost") {
+	var localhost =
+		location.host === "localhost" ||
+		location.protocol === "file:";
+
+	if (location.protocol === "http:" && !localhost) {
 		location = "https" + location.href.substr(4);
 		return;
 	}
@@ -46,7 +50,7 @@
 				ghRepoUrl += "/"+ghRepoSplit[i];
 		}
 
-		if (location.host !== "localhost") {
+		if (!localhost) {
 			var	fbRoot = document.createElement("div"),
 				ga = document.createElement("script"),
 				fb = document.createElement("script");
