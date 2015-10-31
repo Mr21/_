@@ -69,8 +69,8 @@
 			'<span class="lang" title="About">'+
 				'<a href="#" class="fa fa-info-circle" onclick="return false;"></a> '+
 				'<span class="flags">'+
-					'<a target="_blank" href="'+urlAbout+'&lang=en" title="English"><img src="/_/flags/gb.gif"/></a> '+
-					'<a target="_blank" href="'+urlAbout+'&lang=fr" title="Français"><img src="/_/flags/fr.gif"/></a> '+
+					'<a target="_blank" href="'+urlAbout+'&lang=en" title="English"><img src="https://mr21.github.io/_/flags/gb.gif"/></a> '+
+					'<a target="_blank" href="'+urlAbout+'&lang=fr" title="Français"><img src="https://mr21.github.io/_/flags/fr.gif"/></a> '+
 				'</span>'+
 			'</span>'+
 			'<i class="fa fa-fw fa-caret-right"></i> '+
