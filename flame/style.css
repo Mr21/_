@@ -1,0 +1,20 @@
+body {
+	background: #222;
+	color: #ddd;
+}
+
+.canvasloth {
+	position: relative;
+	margin: 50px auto;
+	width: 640px;
+	height: 360px;
+	background: #000;
+}
+
+.canvasloth .joystick {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	bottom: 15px;
+	left: 15px;
+}
