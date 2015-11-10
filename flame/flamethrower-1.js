@@ -125,6 +125,13 @@ Flamethrower.prototype = {
 		return this;
 	},
 
+	isOn: function() { return this; },
+	on: function() { return this; },
+	off: function() { return this; },
+	toggle: function() { return this; },
+	power: function() { return this; },
+
+
 	init: function( o ) {
 		for ( var i in o ) {
 			this[ i ]( o[ i ] );
