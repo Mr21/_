@@ -1,0 +1,31 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font: 14px sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+.no-transition {
+	transition: none !important;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+}
+::-webkit-scrollbar-track {
+	background: #eee;
+}

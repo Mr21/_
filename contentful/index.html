@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ContentFul - test</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="dep/font-awesome/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/header.css"/>
+	<link rel="stylesheet" href="css/articles.css"/>
+	<link rel="stylesheet" href="css/article.css"/>
+
+	<!-- dependances -->
+	<script src="dep/contentful.min.js"></script>
+	<!-- <script src="dep/contentful-management.min.js"></script> -->
+	<!-- <script src="dep/react.js"></script> -->
+	<!-- <script src="dep/react-dom.js"></script> -->
+	<!-- <script src="dep/browser.min.js"></script> -->
+	<script src="dep/markdown.js"></script>
+	<script src="dep/jquery.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="content">
+			<div class="title">
+				<h1>contentful - demo</h1>
+				<form class="search">
+					<input type="text" placeholder="Search..."/>
+					<input type="submit"/>
+				</form>
+			</div>
+			<nav>
+				<div class="categories">
+					<span>Categories :</span>
+				</div>
+				<a class="back" href="#">
+					<i class="fa fa-reply"></i>
+					Back to the list
+				</a>
+			</nav>
+		</div>
+	</header>
+
+	<div id="articles"></div>
+
+	<script>function lg( s ) { console.log( s ); }</script>
+
+	<script src="dom.js"></script>
+	<script src="hashchange.js"></script>
+	<script src="getData.js"></script>
+	<script src="article.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

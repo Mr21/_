@@ -1,0 +1,13 @@
+body {
+	color: #444;
+	background: #eee;
+}
+
+header .content,
+#articles {
+	box-sizing: border-box;
+	min-width: 600px;
+	width: 90%;
+	padding: 10px;
+	margin: auto;
+}

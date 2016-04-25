@@ -1,0 +1,51 @@
+article {
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 130px;
+	border: 1px solid #999;
+	cursor: pointer;
+	margin-top: 10px;
+	background: #fff;
+
+	transition: .3s ease;
+	transition-property: top, left, right, height;
+	top: 0;
+	left: 10px;
+	right: 10px;
+}
+
+article.open {
+	/*position: absolute;*/
+	overflow: auto;
+	left: 0;
+	right: 0;
+	border: 0;
+	border-radius: 0;
+	cursor: default;
+}
+
+article > * {
+	padding: 4px 6px;
+}
+
+article h2 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 18px;
+	border-bottom: 1px solid #bbb;
+	background: #eee;
+}
+
+article img {
+	float: left;
+	margin: 1em;
+	border-radius: 2px;
+	max-width: 50px;
+	transition: max-width .2s;
+}
+
+article.open img {
+	max-width: 250px;
+}
+
